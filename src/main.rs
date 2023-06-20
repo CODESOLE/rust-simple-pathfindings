@@ -88,9 +88,7 @@ fn window_conf() -> Conf {
 
 #[macroquad::main(window_conf)]
 async fn main() {
-    let m_str = "...
-.#.
-...";
+    let m_str = "...\n.#.\n...";
 
     let m = m_str.parse::<dfs::Map>().unwrap();
     let tiles = calculate_tiles(m_str);
